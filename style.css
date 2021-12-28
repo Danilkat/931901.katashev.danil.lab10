@@ -41,11 +41,11 @@ body {
 }
 
 .lamp {
-  width: 7%;
+  width: 100px;
   position: absolute;
   left: 50%;
-  top: 5%;
-  transform: translate(-50%, 5%);
+  top: 30px;
+  transform: translate(-50%);
 }
 
 .lamp img {
@@ -64,9 +64,10 @@ body {
   position: absolute;
   overflow: hidden;
   left: 50%;
-  transform: translate(-50%, 1%);
-  width: 550px;
-  height: 550px;
+  top: -13px;
+  transform: translate(-50%);
+  width: 650px;
+  height: 650px;
   clip-path: polygon(45% 15%, 55% 15%, 100% 100%, 0% 100%);
 }
 
