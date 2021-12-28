@@ -33,8 +33,87 @@ body {
   background-position: bottom 5vh center;
 }
 
-.light {
+.trick {
+  width: 100%;
+  height: 100%;
   position: absolute;
   z-index: 2;
 }
+
+.lamp {
+  width: 7%;
+  position: absolute;
+  left: 50%;
+  top: 5%;
+  transform: translate(-50%, 5%);
+}
+
+.lamp img {
+  width: 100%;
+}
+.top {
+  z-index: 3 !important;
+}
+.bottom {
+  transform: translateY(-4px);
+}
+
+.light {
+  opacity: 0;
+  z-index: 3;
+  position: absolute;
+  overflow: hidden;
+  left: 50%;
+  transform: translate(-50%, 1%);
+  width: 550px;
+  height: 550px;
+  clip-path: polygon(45% 15%, 55% 15%, 100% 100%, 0% 100%);
+}
+
+.yellow_bg {
+  background: rgba(255, 255, 0, 0.5);
+  pointer-events: none;
+  z-index: 4;
+}
+
+.fade-in{
+  opacity: 1;
+  transition: opacity 0.2s linear;
+}
+
+.fade-out{
+  opacity: 0;
+  transition: opacity 0.2s linear;
+  pointer-events: none;
+}
+
+.light:not(.yellow_bg) img {
+  position: absolute;
+}
+
+.magician {
+  left: 60px;
+  width: 40%;
+  bottom: 0px;
+}
+.hat {
+  width: 20%;
+  right: 120px;
+  z-index: 5;
+  bottom: 0px;
+}
+.rabbit {
+  transition: bottom 0.5s;
+  width: 10%;
+  right: 145px;
+  bottom: 130px;
+}
+.bird {
+  transition: bottom 0.5s;
+  width: 12%;
+  right: 135px;
+  bottom: 10px;
+}
+
+
 
